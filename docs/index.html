@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Video Studio · a Claude Code skill by Ghaith Works</title>
+<meta name="description" content="A free Claude Code skill that teaches your AI agent to make narrated explainer videos with a cartoon presenter and mostly free AI tools. Arabic, English and French.">
+<meta property="og:title" content="AI Video Studio · a Claude Code skill">
+<meta property="og:description" content="Interview first, free tools first: the method behind the Ghaith Works guide videos, written for the next AI agent.">
+<meta property="og:type" content="website">
+<link rel="alternate" hreflang="en" href="https://karthus3560.github.io/ai-video-studio-skill/?lang=en">
+<link rel="alternate" hreflang="ar" href="https://karthus3560.github.io/ai-video-studio-skill/?lang=ar">
+<link rel="alternate" hreflang="fr" href="https://karthus3560.github.io/ai-video-studio-skill/?lang=fr">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect x='6' y='6' width='52' height='52' rx='8' fill='%2316120F'/%3E%3Crect x='2' y='2' width='52' height='52' rx='8' fill='%23FFC928' stroke='%2316120F' stroke-width='5'/%3E%3Cpath d='M22 16 L44 28 L22 40 Z' fill='%232F6BFF' stroke='%2316120F' stroke-width='4' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Cairo:wght@500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main" data-i18n="skip">Skip to content</a>
+
+<header class="nav">
+  <a class="wordmark" href="#top" aria-label="Ghaith Works, top of page">GHAITH WORKS</a>
+  <nav class="nav-links" aria-label="Sections">
+    <a href="#install" data-i18n="nav.install">Install</a>
+    <a href="#workflow" data-i18n="nav.workflow">Workflow</a>
+    <a href="#tools" data-i18n="nav.tools">Tools</a>
+    <a href="#faq" data-i18n="nav.faq">FAQ</a>
+  </nav>
+  <div class="nav-end">
+    <div class="langs" role="group" aria-label="Language">
+      <button type="button" data-lang="ar" lang="ar">عربي</button>
+      <button type="button" data-lang="en" lang="en" aria-pressed="true">EN</button>
+      <button type="button" data-lang="fr" lang="fr">FR</button>
+    </div>
+    <a class="btn btn-ink" href="https://github.com/Karthus3560/ai-video-studio-skill" data-i18n="nav.github">GitHub</a>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- HERO -->
+<section class="hero" id="top" aria-labelledby="h1">
+  <h1 id="h1" class="hero-title">
+    <span class="mask"><span class="line" data-i18n="hero.l1">AI Video</span></span>
+    <span class="mask"><span class="line" data-i18n="hero.l2">Studio</span></span>
+  </h1>
+  <p class="hero-sub" data-i18n="hero.sub">A free skill for Claude Code that teaches your AI agent to make narrated explainer videos with a cartoon presenter and mostly free tools, the way Ghaith Works makes its guides.</p>
+  <div class="hero-actions">
+    <a class="btn btn-yellow" href="#install" data-i18n="hero.cta">Get the skill</a>
+    <a class="btn btn-paper" href="https://www.youtube.com/@ghaithworks" data-i18n="hero.watch">Watch the guide</a>
+  </div>
+
+  <figure class="hero-shot" data-ui aria-label="A line from a script written with this skill">
+    <div class="win">
+      <div class="win-bar"><i></i><i></i><i></i><span>script.md</span></div>
+      <div class="win-body">
+        <p class="sl-chap" data-i18n="shot.chap">## 4. Step two: the voice</p>
+        <div class="sl">
+          <span class="sl-n">18</span>
+          <div>
+            <p class="sl-text" data-i18n="shot.line">[whispers] The voice you're hearing right now… is paid. It's a clone of my voice.</p>
+            <p class="sl-meta"><span class="chip chip-y">pose · hand_chest</span><span class="chip chip-b" data-i18n="shot.visual">visual · voice card, PAID tag</span></p>
+          </div>
+        </div>
+        <div class="sl sl-on">
+          <span class="sl-n">19</span>
+          <div>
+            <p class="sl-text" data-i18n="shot.line2">But there's a free one that runs on my laptop, and it clones you from twenty seconds of audio.</p>
+            <p class="sl-meta"><span class="chip chip-y">pose · present</span><span class="chip chip-g" data-i18n="shot.visual2">visual · FREE tag, terminal</span></p>
+          </div>
+        </div>
+        <div class="words" aria-hidden="true">
+          <span>But<b>61.31</b></span><span>there's<b>61.52</b></span><span class="now">a free<b>61.80</b></span><span>one<b>62.14</b></span>
+        </div>
+      </div>
+    </div>
+    <span class="stamp" data-i18n="shot.stamp">APPROVED</span>
+  </figure>
+
+  <p class="hero-fact"><span data-i18n="hero.fact">MIT licence · text only</span><span>عربي · EN · FR</span></p>
+</section>
+
+<!-- HOW IT WORKS: staircase -->
+<section class="stairs" aria-labelledby="stairs-1">
+  <ol class="stair-list">
+    <li class="stair">
+      <h2 id="stairs-1" class="stair-line" data-i18n="st.1">First it asks you questions.</h2>
+      <p data-i18n="st.1p">Topic, audience, dialect, length, voice, presenter, your GPU, your budget, your channel. About twenty, in small batches, each with a suggested answer.</p>
+    </li>
+    <li class="stair">
+      <p class="stair-line" data-i18n="st.2">Then it writes the script.</p>
+      <p data-i18n="st.2p">Every line carries a presenter pose and what is on screen. You read it all before a single word is voiced.</p>
+    </li>
+    <li class="stair">
+      <p class="stair-line" data-i18n="st.3">It voices, times and animates.</p>
+      <p data-i18n="st.3p">Two takes per chapter, checked by Whisper. Every pose and box is keyed to a line. Nothing is timed by hand.</p>
+    </li>
+    <li class="stair">
+      <p class="stair-line accent-line" data-i18n="st.4">You say when it ships.</p>
+      <p data-i18n="st.4p">You review the cut. Uploads, and how to answer each platform's AI question, stay your decision.</p>
+    </li>
+  </ol>
+</section>
+
+<!-- INSTALL -->
+<section class="install" id="install" aria-labelledby="install-h">
+  <div class="install-copy">
+    <h2 id="install-h" class="h2" data-i18n="in.h">Install in one copy</h2>
+    <p data-i18n="in.p">The skill is a folder of text: one <code>SKILL.md</code> and seven reference files. Copy it into your Claude Code skills folder, then ask Claude for a video.</p>
+    <ol class="in-steps">
+      <li data-i18n="in.s1">Download the repo, or clone it.</li>
+      <li data-i18n="in.s2">Copy <code>skills/ai-video-studio</code> into <code>~/.claude/skills/</code>.</li>
+      <li data-i18n="in.s3">Start Claude Code and say: “make me a guide video about …”.</li>
+    </ol>
+  </div>
+  <div class="term" data-ui>
+    <div class="term-bar"><i></i><i></i><i></i><span>Terminal</span>
+      <button type="button" class="copy" data-copy="#cmd" data-i18n="in.copy">Copy</button></div>
+<pre id="cmd" dir="ltr"><code>git clone https://github.com/Karthus3560/ai-video-studio-skill
+cp -r ai-video-studio-skill/skills/ai-video-studio ~/.claude/skills/
+
+# Windows (PowerShell)
+Copy-Item -Recurse ai-video-studio-skill\skills\ai-video-studio "$HOME\.claude\skills\"</code></pre>
+    <pre class="term-out" dir="ltr"><code>&gt; claude
+&gt; make me a 5 minute guide about free AI voices, in Iraqi Arabic</code><span class="cursor">▌</span></pre>
+  </div>
+</section>
+
+<!-- WORKFLOW: call sheet -->
+<section class="sheet-wrap" id="workflow" aria-labelledby="wf-h">
+  <div class="sheet">
+    <h2 id="wf-h" class="sheet-h" data-i18n="wf.h">The call sheet</h2>
+    <p class="sheet-sub" data-i18n="wf.sub">The eleven steps the skill walks your agent through, in order.</p>
+
+    <h3 class="grp" data-i18n="wf.g1">Pre-production</h3>
+    <ol class="menu">
+      <li><span class="mi"><b data-i18n="wf.1">Interview and plan</b><i data-i18n="wf.1d">Twenty questions, then a written plan you confirm.</i></span><span class="mv" data-i18n="wf.1v">your yes</span></li>
+      <li><span class="mi"><b data-i18n="wf.2">Script</b><i data-i18n="wf.2d">Each line has a pose and an on-screen visual.</i></span><span class="mv" data-i18n="wf.2v">you review</span></li>
+    </ol>
+
+    <h3 class="grp" data-i18n="wf.g2">Voice and timing</h3>
+    <ol class="menu" start="3">
+      <li><span class="mi"><b data-i18n="wf.3">Voice per chapter</b><i data-i18n="wf.3d">One TTS call per chapter, two takes each.</i></span><span class="mv" data-i18n="wf.3v">2 takes</span></li>
+      <li><span class="mi"><b data-i18n="wf.4">Whisper QC</b><i data-i18n="wf.4d">Score takes against the script; re-check short lines with a prompt before paying for a retake.</i></span><span class="mv">0.75–0.9</span></li>
+      <li><span class="mi"><b data-i18n="wf.5">Join the narration</b><i data-i18n="wf.5d">Chapter gaps, A/B voice samples in the gaps, one loudness.</i></span><span class="mv">-16 LUFS</span></li>
+      <li><span class="mi"><b data-i18n="wf.6">Align lines to words</b><i data-i18n="wf.6d">Poses, boxes and captions hang off line times. Captions use the script's words.</i></span><span class="mv" data-i18n="wf.6v">0 hand-timing</span></li>
+    </ol>
+
+    <h3 class="grp" data-i18n="wf.g3">Picture and sound</h3>
+    <ol class="menu" start="7">
+      <li><span class="mi"><b data-i18n="wf.7">Cartoon presenter</b><i data-i18n="wf.7d">Character sheet, 4×2 pose sheets on green, cut into aligned frames plus subtle variants.</i></span><span class="mv" data-i18n="wf.7v">32 poses</span></li>
+      <li><span class="mi"><b data-i18n="wf.8">Neo-brutalism in Remotion</b><i data-i18n="wf.8d">Grid paper, ink blocks, hard shadows, right-to-left and left-to-right.</i></span><span class="mv" data-i18n="wf.8v">code</span></li>
+      <li><span class="mi"><b data-i18n="wf.9">Real screen captures</b><i data-i18n="wf.9d">Recorded with ffmpeg, cropped so nothing private shows.</i></span><span class="mv" data-i18n="wf.9v">proof</span></li>
+      <li><span class="mi"><b data-i18n="wf.10">Music and render</b><i data-i18n="wf.10d">Music far under the voice; muted parts per chapter, one audio file, joined by stream copy.</i></span><span class="mv">-18 dB</span></li>
+    </ol>
+
+    <h3 class="grp" data-i18n="wf.g4">Release</h3>
+    <ol class="menu" start="11">
+      <li><span class="mi"><b data-i18n="wf.11">Review, second language, upload</b><i data-i18n="wf.11d">Your notes, the other language, thumbnails, description, then upload on your go.</i></span><span class="mv" data-i18n="wf.11v">your go</span></li>
+    </ol>
+  </div>
+</section>
+
+<!-- TOOLS + live picker -->
+<section class="tools" id="tools" aria-labelledby="tools-h">
+  <div class="tools-head">
+    <h2 id="tools-h" class="h2" data-i18n="tl.h">Free route first</h2>
+    <p data-i18n="tl.p">Claude Code is the only subscription. Every other job has a free tool, and the skill names the paid upgrade so you can choose. Tell it your budget and machine:</p>
+    <div class="picker">
+      <div class="seg" role="radiogroup" aria-labelledby="pk-budget">
+        <span id="pk-budget" class="seg-l" data-i18n="pk.budget">Budget</span>
+        <button type="button" role="radio" aria-checked="true" data-k="budget" data-v="zero" data-i18n="pk.zero">Zero</button>
+        <button type="button" role="radio" aria-checked="false" data-k="budget" data-v="some" data-i18n="pk.some">Some</button>
+      </div>
+      <div class="seg" role="radiogroup" aria-labelledby="pk-gpu">
+        <span id="pk-gpu" class="seg-l" data-i18n="pk.gpu">GPU</span>
+        <button type="button" role="radio" aria-checked="true" data-k="gpu" data-v="yes" data-i18n="pk.yes">Yes</button>
+        <button type="button" role="radio" aria-checked="false" data-k="gpu" data-v="no" data-i18n="pk.no">No</button>
+      </div>
+      <p class="pk-total" aria-live="polite"><span data-i18n="pk.subs">Monthly subscriptions:</span> <b id="pk-count">1</b></p>
+    </div>
+  </div>
+
+  <div class="table-wrap">
+  <table class="tt">
+    <thead><tr><th scope="col" data-i18n="tt.job">Job</th><th scope="col" data-i18n="tt.free">Free route</th><th scope="col" data-i18n="tt.paid">Paid upgrade</th><th scope="col" data-i18n="tt.pick">Your pick</th></tr></thead>
+    <tbody>
+      <tr><th scope="row" data-i18n="tt.r1">Director</th><td><span data-i18n="tt.none">—</span></td><td><a href="https://claude.com/product/claude-code">Claude Code</a></td><td class="pick" data-row="director"></td></tr>
+      <tr><th scope="row" data-i18n="tt.r2">Voice</th><td><a href="https://github.com/hexgrad/kokoro">Kokoro</a> · <a href="https://github.com/resemble-ai/chatterbox">Chatterbox</a></td><td><a href="https://elevenlabs.io">ElevenLabs</a></td><td class="pick" data-row="voice"></td></tr>
+      <tr><th scope="row" data-i18n="tt.r3">Timing &amp; QC</th><td><a href="https://github.com/SYSTRAN/faster-whisper">faster-whisper</a></td><td>—</td><td class="pick" data-row="whisper"></td></tr>
+      <tr><th scope="row" data-i18n="tt.r4">Presenter &amp; images</th><td><a href="https://chatgpt.com">ChatGPT</a> <span data-i18n="tt.freetier">free tier</span> · <a href="https://labs.google/flow">Google Flow</a> · <a href="https://github.com/Comfy-Org/ComfyUI">ComfyUI</a></td><td>ChatGPT Plus</td><td class="pick" data-row="images"></td></tr>
+      <tr><th scope="row" data-i18n="tt.r5">Animation</th><td><a href="https://www.remotion.dev">Remotion</a> · <a href="https://github.com/heygen-com/hyperframes">HyperFrames</a></td><td data-i18n="tt.remlic">Remotion company licence (teams over 3)</td><td class="pick" data-row="anim"></td></tr>
+      <tr><th scope="row" data-i18n="tt.r6">Songs</th><td><a href="https://github.com/ace-step/ACE-Step-1.5">ACE-Step 1.5</a></td><td><a href="https://suno.com">Suno</a></td><td class="pick" data-row="songs"></td></tr>
+      <tr><th scope="row" data-i18n="tt.r7">Background music</th><td><a href="https://mixkit.co/free-stock-music/">Mixkit</a></td><td>—</td><td class="pick" data-row="music"></td></tr>
+      <tr><th scope="row" data-i18n="tt.r8">Glue</th><td><a href="https://ffmpeg.org">ffmpeg</a></td><td>—</td><td class="pick" data-row="glue"></td></tr>
+      <tr><th scope="row" data-i18n="tt.r9">Upload</th><td><a href="https://developers.google.com/youtube/v3">YouTube Data API</a></td><td>—</td><td class="pick" data-row="upload"></td></tr>
+    </tbody>
+  </table>
+  </div>
+</section>
+
+<!-- HARDWARE poster -->
+<section class="poster" aria-labelledby="hw-h">
+  <h2 id="hw-h" class="h2 poster-h" data-i18n="hw.h">What it ran on</h2>
+  <ul class="poster-list">
+    <li><span class="pw">RTX 4050</span><span class="pf" data-i18n="hw.1">6 GB VRAM · a normal laptop</span></li>
+    <li><span class="pw" data-i18n="hw.2w">12 threads</span><span class="pf" data-i18n="hw.2">Remotion renders on the CPU</span></li>
+    <li><span class="pw" data-i18n="hw.3w">Whisper</span><span class="pf" data-i18n="hw.3">medium model, CPU, int8</span></li>
+    <li><span class="pw">5:04</span><span class="pf" data-i18n="hw.4">guide length · about 10 min to render</span></li>
+  </ul>
+  <p class="poster-note" data-i18n="hw.note">No GPU? The online free tiers cover images and voice, and Whisper runs on any CPU.</p>
+</section>
+
+<!-- SHOWCASE: the components -->
+<section class="show" aria-labelledby="show-h">
+  <div class="show-head">
+    <h2 id="show-h" class="h2" data-i18n="sh.h">The pieces on screen</h2>
+    <p data-i18n="sh.p">The skill describes a small kit of Remotion components. Each one takes its times from the script, so re-voicing never breaks the edit.</p>
+  </div>
+  <div class="row">
+    <figure class="panel">
+      <div class="frag frag-banner" data-ui><span class="bn">02</span><span class="bt" data-i18n="sh.bannerT">The voice</span><span class="be">VOICE</span></div>
+      <figcaption><b>StepBanner</b><span data-i18n="sh.c1">Slams in for two seconds at each chapter, then tucks into a corner tag.</span></figcaption>
+    </figure>
+    <figure class="panel">
+      <div class="frag frag-ab" data-ui>
+        <div class="ab ab-free"><span class="pill pill-g" data-i18n="sh.free">FREE</span><b>Chatterbox</b><span class="bars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span></div>
+        <div class="ab ab-paid live"><span class="pill pill-y" data-i18n="sh.paid">PAID</span><b>ElevenLabs</b><span class="bars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span></div>
+      </div>
+      <figcaption><b>ABPlayer</b><span data-i18n="sh.c2">The same sentence in the free voice and the paid voice. The one playing lifts.</span></figcaption>
+    </figure>
+    <figure class="panel">
+      <div class="frag frag-tool" data-ui>
+        <svg class="ti" viewBox="0 0 48 48" aria-hidden="true"><path d="M18 34 V10 L38 6 V30" fill="none" stroke="#16120F" stroke-width="5" stroke-linejoin="round"/><circle cx="13" cy="35" r="6" fill="#2F6BFF" stroke="#16120F" stroke-width="4"/><circle cx="33" cy="31" r="6" fill="#FFC928" stroke="#16120F" stroke-width="4"/></svg><b data-i18n="sh.music">Music</b>
+        <span class="tf"><i data-i18n="sh.free">FREE</i>Mixkit · ACE-Step</span>
+        <span class="tp"><i data-i18n="sh.paid">PAID</i>Suno</span>
+      </div>
+      <figcaption><b>ToolCard</b><span data-i18n="sh.c3">One job, its free tools, and the paid strip that slides in later.</span></figcaption>
+    </figure>
+    <figure class="panel">
+      <div class="frag frag-words" data-ui>
+        <span>“make<b>34.20s</b></span><span>the<b>34.41s</b></span><span class="now">box<b>34.55s</b></span><span>bigger”<b>34.80s</b></span>
+      </div>
+      <figcaption><b>WordsCard</b><span data-i18n="sh.c4">Real Whisper word times popping in as each word is spoken.</span></figcaption>
+    </figure>
+    <figure class="panel">
+      <div class="frag frag-cap" data-ui><span data-i18n="sh.capA">the music has to stay</span> <em data-i18n="sh.capB">quiet</em></div>
+      <figcaption><b>Caption</b><span data-i18n="sh.c5">The script's own words, the spoken word in yellow.</span></figcaption>
+    </figure>
+    <figure class="panel">
+      <div class="frag frag-meter" data-ui>
+        <span class="m" style="--h:86%"><i></i><b data-i18n="sh.voice">Voice</b></span>
+        <span class="m m2" style="--h:18%"><i></i><b data-i18n="sh.music">Music</b></span>
+      </div>
+      <figcaption><b>Meter</b><span data-i18n="sh.c6">Voice at -16 LUFS, music about 18 dB under it.</span></figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq" id="faq" aria-labelledby="faq-h">
+  <h2 id="faq-h" class="h2" data-i18n="fq.h">Before you start</h2>
+  <div class="cards">
+    <details class="card c1" name="faq" open><summary><span class="tab" data-i18n="fq.t1">Cost</span><span class="q" data-i18n="fq.q1">Is it really free?</span></summary>
+      <p data-i18n="fq.a1">The skill is free and MIT-licensed. You need a Claude subscription for Claude Code. Every other step has a free tool; paid tools are optional upgrades the skill names and lets you choose.</p></details>
+    <details class="card c2" name="faq"><summary><span class="tab" data-i18n="fq.t2">Files</span><span class="q" data-i18n="fq.q2">What is in the skill?</span></summary>
+      <p data-i18n="fq.a2">Only text: instructions and short code snippets that explain each step. No art, no voices, no project files. Your agent builds everything in your folder, with your own art and voice.</p></details>
+    <details class="card c3" name="faq"><summary><span class="tab" data-i18n="fq.t3">Upload</span><span class="q" data-i18n="fq.q3">Will it upload videos for me?</span></summary>
+      <p data-i18n="fq.a3">Only when you say so, every time. The skill tells your agent to prepare the file, title, description and thumbnail, show them to you, and wait for your explicit go.</p></details>
+    <details class="card c4" name="faq"><summary><span class="tab" data-i18n="fq.t4">AI labels</span><span class="q" data-i18n="fq.q4">What about AI-content labels?</span></summary>
+      <p data-i18n="fq.a4">YouTube, TikTok and Meta ask whether content is AI-generated or synthetic. The skill has your agent ask you how to answer, read the platform's current rules with you, and follow them. It never tells you to hide a disclosure a platform requires.</p></details>
+    <details class="card c5" name="faq"><summary><span class="tab" data-i18n="fq.t5">Languages</span><span class="q" data-i18n="fq.q5">Does it work in Arabic?</span></summary>
+      <p data-i18n="fq.a5">It was built for an Iraqi Arabic and English channel. Every component handles right-to-left and left-to-right, and both language versions render from the same code.</p></details>
+    <details class="card c6" name="faq"><summary><span class="tab" data-i18n="fq.t6">Machine</span><span class="q" data-i18n="fq.q6">Do I need a strong PC?</span></summary>
+      <p data-i18n="fq.a6">A laptop with a 6 GB GPU was enough for local voices and songs. Without a GPU, use the online free tiers; Whisper and Remotion run on the CPU.</p></details>
+  </div>
+</section>
+
+<!-- CTA -->
+<a class="cta" href="https://www.youtube.com/@ghaithworks">
+  <span class="cta-s" data-i18n="cta.s">See the method in action on the Ghaith Works channel.</span>
+  <svg class="cta-a" viewBox="0 0 48 48" aria-hidden="true"><path d="M12 36 L36 12 M16 12 H36 V32" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="square"/></svg>
+  <span class="cta-w" data-i18n="cta.w">WATCH</span>
+</a>
+
+</main>
+
+<footer class="foot">
+  <div class="foot-top">
+    <div>
+      <p class="foot-inv" data-i18n="ft.inv">Make your first guide this week.</p>
+      <a class="btn btn-yellow" href="https://github.com/Karthus3560/ai-video-studio-skill" data-i18n="ft.btn">Get the skill on GitHub</a>
+    </div>
+    <ul class="foot-links">
+      <li><a href="https://www.youtube.com/@ghaithworks">YouTube @ghaithworks</a></li>
+      <li><a href="https://github.com/Karthus3560/ai-video-studio-skill">GitHub</a></li>
+      <li><a href="https://github.com/Karthus3560/ai-video-studio-skill/blob/main/skills/ai-video-studio/SKILL.md">SKILL.md</a></li>
+      <li><a href="https://github.com/Karthus3560/ai-video-studio-skill/blob/main/LICENSE" data-i18n="ft.lic">MIT licence</a></li>
+    </ul>
+  </div>
+  <p class="foot-legal"><span data-i18n="ft.by">Made by Ghaith Works with Claude Code.</span><span data-i18n="ft.tm">Tool names belong to their owners. Check each tool's licence and price on its own site.</span></p>
+  <p class="foot-name" aria-hidden="true">GHAITH WORKS</p>
+</footer>
+
+<script src="i18n.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
